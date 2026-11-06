@@ -1,14 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sara Johns | Developer Portfolio</title>
-
-    <meta name="description" content="Sara Johns - Cybersecurity student and developer exploring cryptography, technology and creative web experiences.">
+    <meta name="description" content="Sara Johns - Cybersecurity enthusiast and developer exploring cryptography, technology and creative web experiences.">
+    <meta name="theme-color" content="#111014">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,10 +15,11 @@
 <body>
 
     <!-- NAVIGATION -->
-
     <header class="navbar">
 
-        <a href="#home" class="logo">SJ<span>.</span></a>
+        <a href="#home" class="logo" aria-label="Sara Johns home">
+            SJ<span>.</span>
+        </a>
 
         <nav class="nav-links" aria-label="Main navigation">
             <a href="#home">Home</a>
@@ -35,12 +35,456 @@
     </header>
 
 
-    <!-- HERO SECTION -->
-
     <main>
+
+        <!-- =================================
+             HERO SECTION
+        ================================== -->
 
         <section class="hero" id="home">
 
+            <!-- CYBERSECURITY BACKGROUND -->
+            <div class="cyber-background" aria-hidden="true">
+
+                <div class="scene-glow"></div>
+                <div class="scene-grid"></div>
+
+                <!-- Background source code -->
+                <div class="code-rain rain-left">
+                    <span>import hashlib</span>
+                    <span>def authenticate(user):</span>
+                    <span>verify_signature()</span>
+                    <span>ACCESS_CONTROL = True</span>
+                    <span>SHA256(data)</span>
+                    <span>encrypt(payload, key)</span>
+                    <span>public_key.verify()</span>
+                    <span>secure_connection()</span>
+                </div>
+
+                <div class="code-rain rain-right">
+                    <span>RSA_OAEP_ENCRYPT</span>
+                    <span>PUBLIC KEY INFRASTRUCTURE</span>
+                    <span>certificate.verify()</span>
+                    <span>FINGERPRINT: A8:4F:2C</span>
+                    <span>tls_handshake()</span>
+                    <span>AUTHENTICATION SUCCESS</span>
+                </div>
+
+
+                <!-- MAIN CYBERSECURITY ILLUSTRATION -->
+                <svg class="security-illustration"
+                     viewBox="0 0 900 720"
+                     xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+
+                        <linearGradient id="lockBody"
+                                        x1="0" y1="0" x2="1" y2="1">
+
+                            <stop offset="0%" stop-color="#DCA0BB"/>
+                            <stop offset="40%" stop-color="#885477"/>
+                            <stop offset="100%" stop-color="#332039"/>
+
+                        </linearGradient>
+
+
+                        <linearGradient id="shieldFill"
+                                        x1="0" y1="0" x2="1" y2="1">
+
+                            <stop offset="0%"
+                                  stop-color="#D9A0B0"
+                                  stop-opacity=".20"/>
+
+                            <stop offset="100%"
+                                  stop-color="#75466F"
+                                  stop-opacity=".02"/>
+
+                        </linearGradient>
+
+
+                        <filter id="lockGlow"
+                                x="-60%" y="-60%"
+                                width="220%" height="220%">
+
+                            <feGaussianBlur
+                                stdDeviation="12"
+                                result="blur"/>
+
+                            <feMerge>
+                                <feMergeNode in="blur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+
+                        </filter>
+
+
+                        <filter id="smallGlow"
+                                x="-60%" y="-60%"
+                                width="220%" height="220%">
+
+                            <feGaussianBlur
+                                stdDeviation="4"
+                                result="blur"/>
+
+                            <feMerge>
+                                <feMergeNode in="blur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+
+                        </filter>
+
+                    </defs>
+
+
+                    <!-- Circuit pathways -->
+                    <g class="scene-circuits">
+
+                        <path d="M25 170 H190 L260 240"/>
+                        <path d="M30 510 H210 L280 440"/>
+                        <path d="M670 120 H800 V230"/>
+                        <path d="M690 580 H840 V490"/>
+                        <path d="M100 350 H210"/>
+                        <path d="M720 350 H870"/>
+
+                    </g>
+
+
+                    <!-- Shield -->
+                    <g class="main-shield">
+
+                        <path
+                            d="M450 70
+                               C530 115 625 130 700 145
+                               L680 385
+                               C665 505 550 600 450 655
+                               C350 600 235 505 220 385
+                               L200 145
+                               C275 130 370 115 450 70 Z"
+
+                            fill="url(#shieldFill)"
+                            stroke="#C58AAE"
+                            stroke-width="2.5"/>
+
+
+                        <path
+                            d="M450 100
+                               C525 140 600 151 672 165
+                               L655 380
+                               C640 480 545 565 450 615
+                               C355 565 260 480 245 380
+                               L228 165
+                               C300 151 375 140 450 100 Z"
+
+                            fill="none"
+                            stroke="#D9A0B0"
+                            stroke-opacity=".3"
+                            stroke-width="1.3"
+                            stroke-dasharray="7 10"/>
+
+                    </g>
+
+
+                    <!-- Incoming intrusion signals -->
+                    <g class="attack-beams">
+
+                        <path d="M20 220 L295 330"/>
+                        <path d="M40 420 L310 370"/>
+                        <path d="M850 200 L605 325"/>
+                        <path d="M880 470 L605 390"/>
+                        <path d="M90 580 L350 445"/>
+
+                    </g>
+
+
+                    <!-- Intrusion signal points -->
+                    <g class="attack-points">
+
+                        <circle cx="85" cy="245" r="5"/>
+                        <circle cx="115" cy="435" r="4"/>
+                        <circle cx="820" cy="220" r="5"/>
+                        <circle cx="840" cy="455" r="4"/>
+                        <circle cx="165" cy="550" r="5"/>
+
+                    </g>
+
+
+                    <!-- LOCK ASSEMBLY -->
+                    <g class="lock-assembly"
+                       transform="translate(450 420) scale(.80) translate(-450 -420)">
+
+                        <!-- Lock shackle -->
+                        <g class="main-lock" filter="url(#lockGlow)">
+
+                            <path
+                                d="M345 335 V255
+                                   C345 170 555 170 555 255 V335"
+
+                                fill="none"
+                                stroke="#DFA5BE"
+                                stroke-width="35"
+                                stroke-linecap="round"/>
+
+
+                            <path
+                                d="M355 330 V260
+                                   C355 190 545 190 545 260 V330"
+
+                                fill="none"
+                                stroke="#F2C2D5"
+                                stroke-opacity=".75"
+                                stroke-width="5"/>
+
+                        </g>
+
+
+                        <!-- Lock body -->
+                        <g class="lock-body">
+
+                            <path
+                                d="M280 330 L590 330 L625 360
+                                   L625 545 L590 570 L280 570 Z"
+
+                                fill="#493047"
+                                stroke="#D9A0B0"
+                                stroke-width="2"/>
+
+
+                            <path
+                                d="M280 330 L590 330 L590 545 L280 545 Z"
+
+                                fill="url(#lockBody)"
+                                stroke="#F1BED0"
+                                stroke-width="2"/>
+
+
+                            <path
+                                d="M300 350 H570"
+
+                                stroke="#F7D6E2"
+                                stroke-opacity=".3"
+                                stroke-width="2"/>
+
+                        </g>
+
+
+                        <!-- Keyhole -->
+                        <g class="keyhole">
+
+                            <circle
+                                cx="435" cy="420" r="38"
+                                fill="#251729"
+                                stroke="#F1C3D4"
+                                stroke-width="3"/>
+
+
+                            <circle
+                                cx="435" cy="420" r="14"
+                                fill="#D9A0B0"/>
+
+
+                            <path
+                                d="M420 440 H450 V490 L435 505 L420 490 Z"
+
+                                fill="#251729"
+                                stroke="#F1C3D4"
+                                stroke-width="2"/>
+
+
+                            <circle
+                                cx="435" cy="420" r="7"
+                                fill="#FFF0F6"/>
+
+                        </g>
+
+                    </g>
+
+
+                    <!-- Blocked intrusion impact -->
+                    <g class="impact-effect">
+
+                        <circle cx="285" cy="350" r="42"/>
+
+                        <path d="M265 330 L305 370 M305 330 L265 370"/>
+
+                    </g>
+
+
+                    <!-- =================================
+                         PKI CERTIFICATE TRUST CHAIN
+                    ================================== -->
+
+                    <g class="pki-visual-chain">
+
+                        <!-- Connecting trust path -->
+                        <path
+                            d="M710 205 V430"
+                            fill="none"
+                            stroke="#D9A0B0"
+                            stroke-width="1.5"
+                            stroke-dasharray="4 6"
+                            opacity=".7"/>
+
+
+                        <!-- ROOT CA -->
+                        <g class="pki-node">
+
+                            <rect
+                                x="686" y="181"
+                                width="48" height="48"
+                                rx="9"/>
+
+                            <path d="M698 195 H722 V216 H698 Z"/>
+
+                            <path d="M703 195 V189 H717 V195"/>
+
+                            <path d="M703 203 H717 M703 208 H717"/>
+
+                        </g>
+
+                        <text class="pki-svg-title"
+                              x="746" y="199">
+                            ROOT CA
+                        </text>
+
+                        <text class="pki-svg-subtitle"
+                              x="746" y="215">
+                            TRUST ANCHOR
+                        </text>
+
+
+                        <!-- INTERMEDIATE CA -->
+                        <g class="pki-node">
+
+                            <rect
+                                x="686" y="286"
+                                width="48" height="48"
+                                rx="9"/>
+
+                            <path d="M698 300 H722 V321 H698 Z"/>
+
+                            <path d="M703 300 V294 H717 V300"/>
+
+                            <path d="M703 308 H717 M703 313 H717"/>
+
+                        </g>
+
+                        <text class="pki-svg-title"
+                              x="746" y="304">
+                            INTERMEDIATE CA
+                        </text>
+
+                        <text class="pki-svg-subtitle"
+                              x="746" y="320">
+                            ISSUING AUTHORITY
+                        </text>
+
+
+                        <!-- SERVER CERTIFICATE -->
+                        <g class="pki-node">
+
+                            <rect
+                                x="686" y="391"
+                                width="48" height="48"
+                                rx="9"/>
+
+                            <path d="M698 401 H716 L722 407 V426 H698 Z"/>
+
+                            <path d="M716 401 V407 H722"/>
+
+                            <path d="M702 414 L707 419 L717 408"/>
+
+                        </g>
+
+                        <text class="pki-svg-title"
+                              x="746" y="409">
+                            SERVER CERTIFICATE
+                        </text>
+
+                        <text class="pki-svg-subtitle"
+                              x="746" y="425">
+                            IDENTITY + PUBLIC KEY
+                        </text>
+
+                    </g>
+
+
+                    <!-- ONE DIGITAL CERTIFICATE SEAL -->
+                    <g class="certificate-seal">
+
+                        <circle
+                            cx="745" cy="570" r="65"
+                            fill="#251829"
+                            stroke="#D9A0B0"
+                            stroke-width="3"/>
+
+
+                        <circle
+                            cx="745" cy="570" r="55"
+                            fill="none"
+                            stroke="#E9B5C9"
+                            stroke-width="1.2"
+                            stroke-dasharray="3 5"/>
+
+
+                        <!-- Checkmark -->
+                        <path
+                            d="M716 570 L737 591 L775 548"
+
+                            fill="none"
+                            stroke="#F4C8D8"
+                            stroke-width="8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            filter="url(#smallGlow)"/>
+
+
+                        <!-- Certificate ribbons -->
+                        <path
+                            d="M718 625 L710 673 L745 654 L780 673 L772 625"
+
+                            fill="#885477"
+                            stroke="#D9A0B0"
+                            stroke-width="2"/>
+
+
+                        <text
+                            x="745" y="505"
+                            text-anchor="middle"
+                            fill="#EFC6D7"
+                            font-size="10"
+                            letter-spacing="1.5">
+
+                            VERIFIED
+
+                        </text>
+
+                    </g>
+
+                </svg>
+
+
+                <!-- INTRUSION NOTIFICATION -->
+                <div class="intrusion-label">
+
+                    <span class="intrusion-icon">!</span>
+
+                    <div>
+                        <strong>INTRUSION DETECTED</strong>
+                        <small>UNAUTHORISED PACKET BLOCKED</small>
+                    </div>
+
+                </div>
+
+
+                <!-- Bottom scene caption -->
+                <div class="scene-caption caption-bottom">
+                    ENCRYPT · VERIFY · PROTECT
+                </div>
+
+            </div>
+
+
+            <!-- HERO CONTENT -->
             <div class="hero-content">
 
                 <p class="hero-label">
@@ -50,8 +494,7 @@
 
 
                 <h1>
-                    Sara
-                    <span>Johns</span>
+                    Sara <span>Johns.</span>
                 </h1>
 
 
@@ -63,12 +506,10 @@
 
                 <p class="hero-description">
                     I like figuring out what happens beneath the surface.
-
-                    I'm a cybersecurity student drawn to the way
-                    technology works, the vulnerabilities hidden
-                    within it, and the possibilities of building
-                    something better. From cryptography to
-                    interactive web experiences, I enjoy
+                    I'm a cybersecurity student drawn to the way technology
+                    works, the vulnerabilities hidden within it, and the
+                    possibilities of building something better. From
+                    cryptography to interactive web experiences, I enjoy
                     turning curiosity into projects.
                 </p>
 
@@ -89,11 +530,321 @@
 
         </section>
 
+
+
+
+<!-- ==========================================
+     PROJECTS — INTERACTIVE MIND MAP
+========================================== -->
+
+<section class="projects mindmap-projects grid-bg" id="projects">
+
+    <!-- CIRCULAR MIND MAP -->
+
+    <div class="project-map">
+
+        <svg class="project-map-lines"
+             viewBox="0 0 800 560"
+             preserveAspectRatio="xMidYMid meet"
+             aria-hidden="true">
+
+            <circle cx="400" cy="280" r="185" class="map-orbit"/>
+            
+                <path d="M400 95 L400 158" class="map-connector"/>
+
+                <path d="M205 441 L306 358" class="map-connector"/>
+
+                <path d="M595 441 L494 358" class="map-connector"/>
+
+            <circle cx="400" cy="190" r="4" class="map-point"/>
+            <circle cx="315" cy="325" r="4" class="map-point"/>
+            <circle cx="485" cy="325" r="4" class="map-point"/>
+
+        </svg>
+
+
+        <!-- CENTRAL CIRCLE -->
+
+        <div class="map-center">
+                    <h3>Projects I've<br><span>built.</span></h3>
+            <p>
+                Experiments, research and ideas brought to life through code.
+            </p>
+        </div>
+
+
+        <!-- PROJECT SELECTOR 01 -->
+
+        <button type="button"
+                class="map-node node-file"
+                data-project="file"
+                aria-controls="project-display"
+                aria-pressed="false">
+
+            <span class="node-number">01</span>
+            <span class="node-title">File Integrity</span>
+            <span class="node-category">CYBERSECURITY</span>
+            <span class="node-arrow">↘</span>
+
+        </button>
+
+
+        <!-- PROJECT SELECTOR 02 -->
+
+        <button type="button"
+                class="map-node node-cipher"
+                data-project="cipher"
+                aria-controls="project-display"
+                aria-pressed="false">
+
+            <span class="node-number">02</span>
+            <span class="node-title">Cipher Arms Race</span>
+            <span class="node-category">CRYPTOGRAPHY</span>
+            <span class="node-arrow">↗</span>
+
+        </button>
+
+
+        <!-- PROJECT SELECTOR 03 -->
+
+        <button type="button"
+                class="map-node node-sensor"
+                data-project="sensor"
+                aria-controls="project-display"
+                aria-pressed="false">
+
+            <span class="node-number">03</span>
+            <span class="node-title">Sensor Fusion</span>
+            <span class="node-category">AUTOMOTIVE TECH</span>
+            <span class="node-arrow">↗</span>
+
+        </button>
+
+    </div>
+
+
+    <!-- PROJECT DISPLAY AREA -->
+
+    <div class="project-display" id="project-display" aria-live="polite">
+
+        <div class="project-display-placeholder" id="project-placeholder">
+            <span class="placeholder-line"></span>
+            <p>SELECT A PROJECT TO EXPLORE</p>
+            <span class="placeholder-subtext">
+                Choose one of the three connected nodes above.
+            </span>
+        </div>
+
+
+        <!-- PROJECT 01: FILE INTEGRITY -->
+
+        <article class="project-panel" id="panel-file" hidden>
+
+            <div class="showcase-heading">
+
+                <div>
+                    <span class="showcase-number">01 / CYBERSECURITY</span>
+                    <h3>File Integrity Toolkit</h3>
+                </div>
+
+                <span class="project-status completed">COMPLETED</span>
+
+            </div>
+
+            <p class="showcase-description">
+                A Python-based toolkit for verifying file integrity using
+                cryptographic hashing and digital signatures. Explores
+                secure key handling, signing and verification.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>SHA-256</span>
+                <span>Ed25519</span>
+                <span>Cryptography</span>
+            </div>
+
+            <div class="showcase-gallery file-gallery">
+
+                <figure>
+                    <img
+                        src="assets/file-integrity-demo.png"
+                        alt="File Integrity Toolkit showing successful digital signature verification"
+                        loading="lazy"
+                    />
+                    <figcaption>
+                        SIGNATURE VERIFICATION / SUCCESS
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <a
+                href="https://github.com/sarajohns25/file-integrity-toolkit"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Explore repository <span>↗</span>
+            </a>
+
+        </article>
+
+
+        <!-- PROJECT 02: CIPHER ARMS RACE -->
+
+        <article class="project-panel" id="panel-cipher" hidden>
+
+            <div class="showcase-heading">
+
+                <div>
+                    <span class="showcase-number">02 / CRYPTOGRAPHY</span>
+                    <h3>Cipher Arms Race</h3>
+                </div>
+
+                <span class="project-status ongoing">IN PROGRESS</span>
+
+            </div>
+
+            <p class="showcase-description">
+                An interactive cryptography experience where Alice encrypts
+                messages, Bob receives them, and Eve attempts to break the
+                encryption. Currently featuring Caesar and Vigenère ciphers
+                with attack demonstrations.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Cryptography</span>
+            </div>
+
+            <div class="showcase-gallery cipher-showcase-gallery">
+
+                <figure>
+                    <img
+                        src="assets/cipher-caesar.png"
+                        alt="Caesar cipher interface"
+                        loading="lazy"
+                    />
+                    <figcaption>01 / CAESAR CIPHER</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/cipher-vigenere.png"
+                        alt="Vigenère cipher interface"
+                        loading="lazy"
+                    />
+                    <figcaption>02 / VIGENÈRE CIPHER</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/cipher-eve-caesar.png"
+                        alt="Eve's Caesar brute force attack console"
+                        loading="lazy"
+                    />
+                    <figcaption>03 / EVE — CAESAR ATTACK</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/cipher-eve-vigenere.png"
+                        alt="Eve's Vigenère attack console"
+                        loading="lazy"
+                    />
+                    <figcaption>04 / EVE — VIGENÈRE ATTACK</figcaption>
+                </figure>
+
+            </div>
+
+            <p class="project-note">
+                More cipher levels in development.
+            </p>
+
+           
+            <a href="https://github.com/sarajohns25/cipher-arms-race"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer">
+                    Explore repository <span>↗</span>
+            </a>
+            
+        </article>
+
+
+        <!-- PROJECT 03: SENSOR FUSION -->
+
+        <article class="project-panel" id="panel-sensor" hidden>
+
+            <div class="showcase-heading">
+
+                <div>
+                    <span class="showcase-number">03 / AUTOMOTIVE TECHNOLOGY</span>
+                    <h3>Automotive Sensor Fusion</h3>
+                </div>
+
+                <span class="project-status completed">COMPLETED</span>
+
+            </div>
+
+            <p class="showcase-description">
+                A simulation-based study exploring delayed radar and camera
+                measurements and comparing methods for improving vehicle
+                position estimation.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>NumPy</span>
+                <span>Kalman Filter</span>
+                <span>Matplotlib</span>
+            </div>
+
+            <div class="showcase-gallery sensor-showcase-gallery">
+
+                <figure>
+                    <img
+                        src="assets/sensor-fusion-dashboard.png"
+                        alt="Automotive sensor fusion simulation dashboard"
+                        loading="lazy"
+                    />
+                    <figcaption>01 / SIMULATION DASHBOARD</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/sensor-fusion-trajectory.png"
+                        alt="Vehicle trajectory comparison across fusion methods"
+                        loading="lazy"
+                    />
+                    <figcaption>02 / VEHICLE TRAJECTORY COMPARISON</figcaption>
+                </figure>
+
+            </div>
+
+            <a
+                href="https://github.com/sarajohns25/sensor-fusion-delay"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Explore repository <span>↗</span>
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
     </main>
 
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
-
 </html>
