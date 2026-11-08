@@ -7031,3 +7031,27 @@ header {
         gap: 18px;
     }
 }
+
+/* ==========================================
+   EDUCATION SCROLL — MOBILE PERFORMANCE TUNE
+   Keeps the existing scroll design and timing.
+========================================== */
+
+/* Prepare the parchment reveal for its existing clip-path animation. */
+.education-section .scroll-paper {
+    will-change: clip-path;
+}
+
+/* The full-size drop-shadow filter is costly on some mobile browsers.
+   Keep the same shadow style, but reduce its blur and distance on mobile. */
+@media (max-width: 760px) {
+    .education-section .scroll-stage {
+        filter: drop-shadow(0 10px 13px rgba(0, 0, 0, .30));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .education-section .scroll-paper {
+        will-change: auto;
+    }
+}
