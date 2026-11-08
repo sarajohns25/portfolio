@@ -2139,11 +2139,7 @@ a {
    PROJECTS — SCREENSHOT SHOWCASE
 ========================================== */
 
-.projects {
-    padding: 105px 7%;
-    background: var(--surface);
-    border-top: 1px solid var(--border);
-}
+
 
 .projects-heading {
     display: flex;
@@ -2158,9 +2154,7 @@ a {
     letter-spacing: -2px;
 }
 
-.projects-heading h2 span {
-    color: var(--rose);
-}
+
 
 .projects-intro {
     max-width: 330px;
@@ -2236,24 +2230,11 @@ a {
     letter-spacing: 1px;
 }
 
-.project-status {
-    padding: 6px 9px;
-    border-radius: 3px;
-    font-size: 8px;
-    letter-spacing: 1px;
-}
 
-.project-status.completed {
-    color: #A5BDA9;
-    background: rgba(125,164,132,.10);
-    border: 1px solid rgba(125,164,132,.25);
-}
 
-.project-status.ongoing {
-    color: #E3B9A0;
-    background: rgba(227,185,160,.09);
-    border: 1px solid rgba(227,185,160,.22);
-}
+
+
+
 
 .project-feature-info h3 {
     font-size: clamp(26px, 3vw, 35px);
@@ -2275,14 +2256,7 @@ a {
     margin-top: 22px;
 }
 
-.project-tags span {
-    padding: 6px 10px;
-    color: var(--rose);
-    background: rgba(152,107,153,.10);
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    font-size: 10px;
-}
+
 
 .project-link {
     display: inline-flex;
@@ -2297,13 +2271,9 @@ a {
     transition: color .3s ease;
 }
 
-.project-link span {
-    color: var(--rose);
-}
 
-.project-link:hover {
-    color: var(--rose);
-}
+
+
 
 
 /* Two secondary projects */
@@ -3242,4 +3212,3822 @@ a {
 
     background-size: 38px 38px;
     background-position: center center;
+}
+
+
+/* =========================================
+   POETRY — BETWEEN THE LINES
+========================================= */
+
+.poetry-section {
+    padding: 110px 8%;
+    position: relative;
+}
+
+.poetry-intro {
+    max-width: 760px;
+    margin: 0 auto 85px;
+    text-align: center;
+}
+
+.poetry-eyebrow {
+    color: var(--rose);
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.poetry-intro h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 400;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.poetry-intro p,
+.poetry-feature-heading p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.poetry-feature {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.poetry-feature-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.poetry-feature-heading > span {
+    color: var(--rose);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.poetry-feature-heading h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 400;
+    margin: 16px 0 10px;
+}
+
+.poetry-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.poetry-tab {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 13px 22px;
+    font: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.poetry-tab:hover,
+.poetry-tab.active {
+    color: var(--text);
+    border-color: var(--rose);
+    background: rgba(217, 160, 176, 0.09);
+}
+
+.poetry-tab:focus-visible {
+    outline: 2px solid var(--rose);
+    outline-offset: 4px;
+}
+
+.poetry-reading {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.poetry-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.poetry-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.poetry-panel[hidden] {
+    display: none !important;
+}
+
+/* Short quote */
+
+.poetry-fragment {
+    max-width: 900px;
+    margin: 120px auto 0;
+}
+
+.poetry-fragment > .poetry-eyebrow {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fragment-content {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    gap: 40px;
+    padding: 35px;
+    border: 1px solid var(--border);
+    background: rgba(28, 25, 33, 0.72);
+}
+
+.fragment-text h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.fragment-text p {
+    color: var(--muted);
+    line-height: 1.9;
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+}
+
+.fragment-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .poetry-section {
+        padding: 80px 6%;
+    }
+
+    .poetry-intro {
+        margin-bottom: 60px;
+    }
+
+    .poetry-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .poetry-tab {
+        width: 100%;
+    }
+
+    .poetry-images {
+        gap: 14px;
+    }
+
+    .poetry-fragment {
+        margin-top: 80px;
+    }
+
+    .fragment-content {
+        grid-template-columns: 1fr;
+        padding: 22px;
+        gap: 25px;
+    }
+
+    .fragment-content img {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================
+   POETRY BOOK — WARM LITERARY EXPERIENCE
+========================================= */
+
+.poetry-book-section {
+    position: relative;
+    overflow: hidden;
+    padding: 110px 5% 130px;
+    background:
+        radial-gradient(ellipse at 50% 45%,
+            rgba(119, 71, 63, 0.19),
+            transparent 58%),
+        linear-gradient(145deg, #211817, #181313 65%, #211716);
+    color: #eee3d5;
+}
+
+/* Soft atmosphere */
+
+.poetry-book-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.13;
+    background-image:
+        radial-gradient(#d4b99b 0.6px, transparent 0.6px);
+    background-size: 29px 29px;
+}
+
+.book-intro {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 65px;
+}
+
+.book-eyebrow {
+    color: #c99e83;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+}
+
+.book-intro h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+    font-weight: 400;
+    font-style: italic;
+    color: #f0e4d7;
+    margin: 22px 0 16px;
+}
+
+.book-intro p {
+    color: #b9a69a;
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Book stage */
+
+.book-scene {
+    position: relative;
+    z-index: 2;
+    width: min(850px, 100%);
+    height: 530px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1800px;
+}
+
+/* Closed cover */
+
+.book-cover {
+    position: absolute;
+    width: 330px;
+    height: 460px;
+    border: 1px solid #a47a4d;
+    border-radius: 5px 13px 13px 5px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e6cfaa;
+    cursor: pointer;
+    background:
+        linear-gradient(105deg,
+            rgba(0,0,0,0.28),
+            transparent 16%,
+            rgba(255,255,255,0.035) 50%,
+            rgba(0,0,0,0.22)),
+        linear-gradient(145deg, #632d37, #3b1d25 65%, #29151d);
+    box-shadow:
+        -12px 12px 0 #24161a,
+        -17px 17px 0 #171013,
+        0 35px 55px rgba(0,0,0,0.5),
+        inset 0 0 35px rgba(0,0,0,0.25);
+    transition:
+        transform 1.1s cubic-bezier(.2,.75,.25,1),
+        opacity 0.5s ease,
+        visibility 0.5s;
+    transform-origin: left center;
+    z-index: 5;
+}
+
+.book-cover:hover {
+    transform: translateY(-8px) rotate(-1deg);
+}
+
+.cover-top {
+    position: absolute;
+    top: 43px;
+    font-size: 0.58rem;
+    letter-spacing: 3px;
+    color: #c9a87d;
+}
+
+.cover-ornament {
+    color: #d7b78d;
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.cover-title {
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    font-style: italic;
+    line-height: 1.12;
+    text-align: center;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.cover-subtitle {
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #d6bda3;
+    margin-top: 22px;
+}
+
+.cover-divider {
+    width: 65px;
+    height: 1px;
+    background: #c7a478;
+    margin: 28px 0 20px;
+}
+
+.cover-author {
+    font-size: 0.62rem;
+    letter-spacing: 3px;
+    color: #d7b78d;
+}
+
+.book-cover.opening {
+    transform: rotateY(-155deg);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Open book */
+
+.open-book {
+    position: absolute;
+    width: min(820px, 100%);
+    height: 460px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.88) translateY(25px);
+    transition:
+        opacity 0.8s ease 0.35s,
+        transform 0.8s ease 0.35s,
+        visibility 0.8s;
+    filter: drop-shadow(0 25px 25px rgba(0,0,0,0.4));
+}
+
+.open-book.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+}
+
+.book-spine {
+    position: absolute;
+    z-index: 3;
+    width: 15px;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 7px);
+    background: linear-gradient(90deg, #8a7158, #e0c8a8, #94785b);
+    opacity: 0.55;
+}
+
+
+.book-left-page,
+.book-right-page {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, rgba(65,43,38,0.12), transparent 18%),
+        #c7b2a3;
+    color: #45332f;
+    border: 1px solid #967c70;
+}
+
+
+.book-left-page {
+    border-radius: 5px 0 0 5px;
+    padding: 48px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-right-page {
+    border-radius: 0 5px 5px 0;
+    padding: 24px;
+    box-shadow: inset 8px 0 15px rgba(78,48,30,0.12);
+}
+
+.page-decoration {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: #89665b;
+}
+
+.chapter-label {
+    font-size: 0.62rem;
+    letter-spacing: 2px;
+    color: #795b53;
+}
+
+.left-page-content h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.left-page-content p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #70554d;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: 	#795c50;
+    font-family: Georgia, serif;
+    font-size: 0.75rem;
+}
+
+/* Right page content */
+
+.right-page-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.right-page-content.turning {
+    opacity: 0;
+    transform: translateX(12px);
+}
+
+.right-page-content img {
+    width: 100%;
+    height: 100%;
+    max-height: 410px;
+    object-fit: contain;
+    display: block;
+}
+
+.book-welcome {
+    text-align: center;
+    font-family: Georgia, serif;
+    padding: 20px;
+}
+
+.book-welcome span {
+    color: #a78260;
+    font-size: 1.7rem;
+}
+
+.book-welcome h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 20px 0 10px;
+}
+
+.book-welcome p {
+    color: #907963;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Book controls */
+
+.book-controls {
+    position: absolute;
+    bottom: -62px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.book-control,
+.page-arrow {
+    background: transparent;
+    border: 1px solid rgba(201,158,131,0.45);
+    color: #d7bba1;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.book-control {
+    padding: 9px 15px;
+    font-size: 0.76rem;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #c7aa91;
+    font-family: Georgia, serif;
+    font-size: 0.8rem;
+}
+
+.page-arrow {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+
+.book-control:hover,
+.page-arrow:hover:not(:disabled) {
+    background: rgba(201,158,131,0.12);
+    border-color: #d6b28e;
+    color: #fff0dc;
+}
+
+.page-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.book-hint {
+    position: relative;
+    z-index: 1;
+    margin: 30px auto 0;
+    text-align: center;
+    color: #a98e7d;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.book-hint span:first-child {
+    color: #c9a27e;
+    margin-right: 7px;
+}
+
+.book-hint span:last-child {
+    display: block;
+    margin-top: 8px;
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c99e83;
+}
+
+/* Accessibility */
+
+.book-cover:focus-visible,
+.book-control:focus-visible,
+.page-arrow:focus-visible {
+    outline: 2px solid #e1bd95;
+    outline-offset: 4px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    .poetry-book-section {
+        padding: 80px 5% 100px;
+    }
+
+    .book-intro {
+        margin-bottom: 45px;
+    }
+
+    .book-scene {
+        height: 620px;
+        perspective: 1200px;
+    }
+
+    .book-cover {
+        width: min(290px, 82vw);
+        height: 420px;
+    }
+
+    .cover-title {
+        font-size: 2.8rem;
+    }
+
+    .open-book {
+        width: 100%;
+        height: 440px;
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .book-left-page {
+        padding: 35px 14px;
+    }
+
+    .book-right-page {
+        padding: 12px;
+    }
+
+    .left-page-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .left-page-content p {
+        font-size: 0.8rem;
+    }
+
+    .chapter-label {
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+    }
+
+    .right-page-content img {
+        max-height: 405px;
+    }
+
+    .book-controls {
+        bottom: -65px;
+    }
+
+    .book-control {
+        padding: 8px;
+        font-size: 0.68rem;
+    }
+
+    .page-navigation {
+        gap: 8px;
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .open-book {
+        grid-template-columns: 0.72fr 1.28fr;
+    }
+
+    .book-left-page {
+        padding: 28px 10px;
+    }
+
+    .left-page-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .left-page-content p {
+        font-size: 0.73rem;
+    }
+}
+
+
+
+/* =========================================
+   POETRY BOOK — MOBILE TWO-PAGE SPREAD
+========================================= */
+
+@media (max-width: 700px) {
+
+    .book-scene {
+        height: 610px;
+    }
+
+    .open-book {
+        width: 100%;
+        max-width: 440px;
+        height: 440px;
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    /* Centre spine */
+
+    .book-spine {
+        display: block;
+        width: 8px;
+        left: calc(45% - 4px);
+        box-shadow:
+            -3px 0 7px rgba(48, 27, 23, 0.2),
+            3px 0 7px rgba(48, 27, 23, 0.2);
+    }
+
+    /* Left page */
+
+    .book-left-page {
+        display: flex;
+        padding: 30px 10px;
+        border-radius: 5px 0 0 5px;
+        background:
+            radial-gradient(
+                ellipse at 50% 50%,
+                rgba(255, 239, 219, 0.08),
+                transparent 75%
+            ),
+            linear-gradient(
+                90deg,
+                rgba(65, 43, 38, 0.10),
+                transparent 20%
+            ),
+            #c7b2a3;
+    }
+
+    .left-page-content {
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .left-page-content h3 {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+        line-height: 1.3;
+        margin: 18px 0;
+    }
+
+    .left-page-content p {
+        font-size: 0.72rem;
+        line-height: 1.65;
+    }
+
+    .chapter-label {
+        font-size: 0.46rem;
+        letter-spacing: 0.8px;
+        line-height: 1.6;
+    }
+
+    .page-decoration {
+        top: 15px;
+    }
+
+    /* Right page */
+
+    .book-right-page {
+        position: relative;
+        inset: auto;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+            radial-gradient(
+                ellipse at 50% 50%,
+                rgba(255, 239, 219, 0.08),
+                transparent 75%
+            ),
+            linear-gradient(
+                90deg,
+                rgba(65, 43, 38, 0.10),
+                transparent 20%
+            ),
+            #c7b2a3;
+    }
+
+    .right-page-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-page-content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+    }
+
+    /* Controls */
+
+    .book-controls {
+        bottom: -62px;
+    }
+
+    .page-navigation {
+        gap: 8px;
+    }
+}
+
+/* Smaller phones */
+
+@media (max-width: 380px) {
+
+    .open-book {
+        grid-template-columns: 0.85fr 1.15fr;
+    }
+
+    .book-left-page {
+        padding: 25px 8px;
+    }
+
+    .left-page-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .left-page-content p {
+        font-size: 0.66rem;
+    }
+}
+
+
+
+
+/* =========================================
+   POETRY BOOK — VERTICAL MOBILE BOOK
+   Desktop keeps the traditional spread
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Give the vertically opened book enough room */
+
+    .book-scene {
+        height: 900px;
+        perspective: 1200px;
+    }
+
+    .book-cover {
+        width: min(290px, 82vw);
+        height: 420px;
+    }
+
+    /* Stack the two pages vertically */
+
+    .open-book {
+        position: absolute;
+        width: min(430px, 100%);
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.78fr 1.22fr;
+        transform: scale(0.92) translateY(25px);
+        transform-origin: center center;
+    }
+
+    .open-book.visible {
+        transform: scale(1) translateY(0);
+    }
+
+    /* Horizontal spine between pages */
+
+    .book-spine {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: calc(39% - 5px);
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        height: 10px;
+
+        background: linear-gradient(
+            180deg,
+            #59413d,
+            #b28b78,
+            #d0ad91,
+            #94705f
+        );
+
+        box-shadow:
+            0 -3px 8px rgba(20, 10, 15, 0.2),
+            0 3px 8px rgba(20, 10, 15, 0.2);
+
+        opacity: 1;
+    }
+
+    /* Top page — chapter and description */
+
+    .book-left-page {
+        display: flex;
+        position: relative;
+        min-height: 0;
+        padding: 45px 28px 30px;
+        border-radius: 7px 7px 0 0;
+
+        background:
+            radial-gradient(
+                ellipse at 50% 45%,
+                rgba(190, 137, 132, 0.12),
+                transparent 75%
+            ),
+            linear-gradient(
+                135deg,
+                #63454a,
+                #493239 55%,
+                #38252c
+            );
+
+        color: #ead6ce;
+    }
+
+    .left-page-content {
+        width: 100%;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+
+    .page-decoration {
+        top: 13px;
+    }
+
+    .chapter-label {
+        font-size: 0.58rem;
+        letter-spacing: 2px;
+        line-height: 1.7;
+        color: #c79a91;
+    }
+
+    .left-page-content h3 {
+        font-size: clamp(1.7rem, 6vw, 2.2rem);
+        line-height: 1.2;
+        margin: 20px 0;
+        color: #f0d9d0;
+    }
+
+    .left-page-content p {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: #d1b3aa;
+    }
+
+    /* Bottom page — poem artwork */
+
+    .book-right-page {
+        display: flex;
+        position: relative;
+        min-height: 0;
+        width: auto;
+        height: auto;
+        padding: 22px 18px 30px;
+        border-radius: 0 0 7px 7px;
+
+        background:
+            radial-gradient(
+                ellipse at 50% 45%,
+                rgba(190, 137, 132, 0.12),
+                transparent 75%
+            ),
+            linear-gradient(
+                135deg,
+                #493239,
+                #38252c
+            );
+
+        box-shadow: inset 0 8px 15px rgba(20, 10, 15, 0.18);
+    }
+
+    .right-page-content {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .right-page-content img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        object-fit: contain;
+
+        border: 1px solid rgba(205, 163, 151, 0.4);
+
+        box-shadow:
+            0 8px 20px rgba(15, 7, 12, 0.3);
+    }
+
+    /* Page numbers */
+
+    .book-left-page .page-number {
+        bottom: 10px;
+    }
+
+    .book-right-page .page-number {
+        bottom: 10px;
+    }
+
+    /* Navigation below the book */
+
+    .book-controls {
+        bottom: -65px;
+        left: 0;
+        right: 0;
+    }
+
+    .book-control {
+        padding: 9px 12px;
+        font-size: 0.7rem;
+    }
+
+    .page-navigation {
+        gap: 9px;
+        font-size: 0.75rem;
+    }
+
+    .page-arrow {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* Extra-small phones */
+
+@media (max-width: 380px) {
+
+    .book-scene {
+        height: 850px;
+    }
+
+    .open-book {
+        height: 660px;
+        grid-template-rows: 0.78fr 1.22fr;
+    }
+
+    .book-left-page {
+        padding: 40px 18px 25px;
+    }
+
+    .left-page-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .left-page-content p {
+        font-size: 0.82rem;
+    }
+
+    .book-right-page {
+        padding: 18px 12px 25px;
+    }
+}
+
+
+
+/* =========================================
+   POETRY BOOK — DESKTOP DARK JOURNAL THEME
+   Mobile layout remains untouched
+========================================= */
+
+@media (min-width: 701px) {
+
+    .book-left-page,
+    .book-right-page {
+        background:
+            radial-gradient(
+                ellipse at 50% 45%,
+                rgba(190, 137, 132, 0.12),
+                transparent 75%
+            ),
+            linear-gradient(
+                135deg,
+                #63454a,
+                #493239 55%,
+                #38252c
+            );
+
+        color: #ead6ce;
+        border: 1px solid #88656a;
+    }
+
+    /* Subtle aged texture */
+
+    .book-left-page::before,
+    .book-right-page::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.13;
+
+        background-image:
+            radial-gradient(
+                rgba(235, 198, 184, 0.7) 0.55px,
+                transparent 0.8px
+            );
+
+        background-size: 8px 8px;
+    }
+
+    .book-left-page > *,
+    .book-right-page > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Left page text */
+
+    .chapter-label,
+    .page-decoration,
+    .page-number {
+        color: #c79a91;
+    }
+
+    .left-page-content h3 {
+        color: #f0d9d0;
+    }
+
+    .left-page-content p {
+        color: #d1b3aa;
+    }
+
+    /* Right page artwork frame */
+
+    .book-right-page {
+        background-color: #38252c;
+        box-shadow:
+            inset 8px 0 15px rgba(20, 10, 15, 0.22),
+            inset -3px 0 8px rgba(20, 10, 15, 0.12);
+    }
+
+    .right-page-content {
+        background: #38252c;
+        padding: 8px;
+    }
+
+    .right-page-content img {
+        border: 1px solid rgba(205, 163, 151, 0.45);
+        box-shadow: 0 5px 18px rgba(15, 7, 12, 0.3);
+    }
+
+    /* Welcome page */
+
+    .book-welcome h3 {
+        color: #f0d9d0;
+    }
+
+    .book-welcome p {
+        color: #d1b3aa;
+    }
+
+    .book-welcome span {
+        color: #c79a91;
+    }
+
+    /* Antique gold spine */
+
+    .book-spine {
+        background: linear-gradient(
+            90deg,
+            #59413d,
+            #b28b78,
+            #d0ad91,
+            #94705f
+        );
+
+        opacity: 0.9;
+    }
+}
+
+
+/* =========================================
+   MOBILE — COVER & PAGE DETAIL REFINEMENTS
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* 1. Horizontal closed book cover */
+
+    .book-cover {
+        width: min(420px, 88vw);
+        height: 270px;
+        padding: 25px 20px;
+        transform-origin: center center;
+    }
+
+    .book-cover:hover {
+        transform: translateY(-5px);
+    }
+
+    .cover-top {
+        top: 23px;
+        font-size: 0.52rem;
+        letter-spacing: 2.5px;
+    }
+
+    .cover-ornament {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .cover-title {
+        font-size: clamp(2rem, 8vw, 2.6rem);
+        line-height: 1.05;
+    }
+
+    .cover-subtitle {
+        font-size: 0.82rem;
+        margin-top: 10px;
+    }
+
+    .cover-divider {
+        margin: 13px 0 10px;
+        width: 55px;
+    }
+
+    .cover-author {
+        font-size: 0.55rem;
+        letter-spacing: 2.5px;
+    }
+
+    /* 2. Prevent star and chapter label overlap */
+
+    .book-left-page .page-decoration {
+        top: 10px;
+        left: 50%;
+        font-size: 1.15rem;
+    }
+
+    .book-left-page .left-page-content {
+        padding-top: 20px;
+    }
+
+    .book-left-page .chapter-label {
+        display: block;
+        margin-top: 8px;
+        line-height: 1.8;
+    }
+}
+
+/* Extra-small phones */
+
+@media (max-width: 380px) {
+
+    .book-cover {
+        width: 88vw;
+        height: 235px;
+        padding: 20px 15px;
+    }
+
+    .cover-title {
+        font-size: 1.9rem;
+    }
+
+    .cover-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .book-left-page .left-page-content {
+        padding-top: 22px;
+    }
+}
+
+
+/* Mobile — separate the ornament from chapter text */
+
+@media (max-width: 700px) {
+
+    .book-left-page .page-decoration {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .book-left-page .left-page-content {
+        padding-top: 30px;
+    }
+
+    .book-left-page .chapter-label {
+        display: block;
+        margin-top: 0;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================================
+   POETRY BOOK — FIX CHAPTER ORNAMENT
+========================================= */
+
+/* Keep the decorative symbol independent of the text */
+
+.book-left-page {
+    position: relative;
+}
+
+.book-left-page .page-decoration {
+    position: absolute !important;
+    top: 25px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Keep chapter content in its own layer */
+
+.book-left-page .left-page-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile positioning */
+
+@media (max-width: 700px) {
+
+    .book-left-page .page-decoration {
+        top: 12px;
+    }
+
+    .book-left-page .left-page-content {
+        padding-top: 30px;
+    }
+}
+
+
+/* =========================================
+   MOBILE — COMPACT COVER, FULL OPEN BOOK
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Compact closed-book scene */
+
+    .book-scene {
+        height: 380px;
+        transition: height 0.6s ease;
+    }
+
+    .book-cover {
+        width: min(420px, 88vw);
+        height: 270px;
+    }
+
+    /* Expand the scene after opening */
+
+    .book-scene.book-is-open {
+        height: 900px;
+    }
+
+    .book-scene.book-is-open .open-book {
+        height: 700px;
+    }
+
+    /* Keep the cover hidden after opening */
+
+    .book-cover.opening {
+        pointer-events: none;
+    }
+}
+
+/* Smaller phones */
+
+@media (max-width: 380px) {
+
+    .book-scene {
+        height: 340px;
+    }
+
+    .book-scene.book-is-open {
+        height: 850px;
+    }
+
+    .book-scene.book-is-open .open-book {
+        height: 660px;
+    }
+}
+
+
+/* =========================================
+   THE VAULT — PROJECTS SECTION
+   Secure Archive / Digital Cryptography
+========================================= */
+
+.vault-section {
+    position: relative;
+    padding: 110px 7% 120px;
+    min-height: 100vh;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.vault-section::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(
+        circle,
+        rgba(112, 53, 83, 0.13),
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ---------- INTRO ---------- */
+
+.vault-intro {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 65px;
+}
+
+.vault-intro .vault-eyebrow {
+    color: #bd8d9e;
+    font-size: 0.72rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.vault-intro h2 {
+    color: #eadce0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 6vw, 4.7rem);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    margin: 0 0 18px;
+}
+
+.vault-intro p {
+    color: #a99ba4;
+    font-size: 0.96rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* ---------- VAULT SCENE ---------- */
+
+.vault-scene {
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    min-height: 540px;
+    padding: 45px 25px;
+    border: 1px solid rgba(190, 139, 158, 0.13);
+    border-radius: 8px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(38, 27, 38, 0.82),
+            rgba(19, 17, 23, 0.94)
+        );
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.28),
+        inset 0 0 70px rgba(123, 62, 88, 0.045);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.vault-scene::before,
+.vault-scene::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.vault-scene::before {
+    inset: 12px;
+    border: 1px solid rgba(190, 139, 158, 0.07);
+    border-radius: 5px;
+}
+
+.vault-scene::after {
+    width: 70%;
+    height: 1px;
+    left: 15%;
+    top: 50%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(190, 139, 158, 0.10),
+        transparent
+    );
+}
+
+/* ---------- LOCKED GATE ---------- */
+
+.vault-gate {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.vault-lock {
+    position: relative;
+    width: 245px;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    transition: transform 1s ease;
+}
+
+.vault-outer-ring,
+.vault-middle-ring,
+.vault-inner-ring {
+    position: absolute;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+.vault-outer-ring {
+    inset: 0;
+    border: 2px solid rgba(178, 126, 147, 0.65);
+    box-shadow:
+        0 0 18px rgba(139, 72, 103, 0.12),
+        inset 0 0 18px rgba(139, 72, 103, 0.08);
+}
+
+.vault-outer-ring::before,
+.vault-outer-ring::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #c29a9f;
+    box-shadow: 0 0 10px rgba(194, 154, 159, 0.5);
+}
+
+.vault-outer-ring::before {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vault-outer-ring::after {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vault-middle-ring {
+    inset: 18px;
+    border: 1px solid rgba(191, 143, 155, 0.55);
+}
+
+.vault-inner-ring {
+    inset: 37px;
+    border: 1px dashed rgba(191, 143, 155, 0.4);
+}
+
+.vault-circuit {
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #986b80,
+        transparent
+    );
+}
+
+.circuit-one {
+    top: -14px;
+    left: 50%;
+}
+
+.circuit-two {
+    bottom: -14px;
+    left: 50%;
+}
+
+.circuit-three {
+    right: -14px;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.vault-lock-center {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(
+        circle at 35% 30%,
+        #624052,
+        #2b1d2b 72%
+    );
+    border: 1px solid rgba(207, 164, 171, 0.65);
+    box-shadow:
+        0 0 30px rgba(144, 76, 106, 0.22),
+        inset 0 0 20px rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+.vault-lock-icon {
+    width: 43px;
+    height: 43px;
+    color: #d9b7b9;
+    transition: transform 0.6s ease, color 0.6s ease;
+}
+
+/* ---------- LOCK STATUS ---------- */
+
+.vault-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #c7a1ae;
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    margin-bottom: 13px;
+}
+
+.status-indicator {
+    width: 7px;
+    height: 7px;
+    background: #a66e80;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(166, 110, 128, 0.65);
+    animation: vaultPulse 2s infinite;
+}
+
+@keyframes vaultPulse {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(166, 110, 128, 0.65);
+    }
+    50% {
+        opacity: 0.35;
+        box-shadow: 0 0 3px rgba(166, 110, 128, 0.2);
+    }
+}
+
+.vault-count {
+    color: #766672;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* ---------- UNLOCK BUTTON ---------- */
+
+.vault-unlock-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    min-width: 205px;
+    padding: 15px 24px;
+    border: 1px solid #96677d;
+    border-radius: 2px;
+    background: linear-gradient(
+        120deg,
+        rgba(91, 49, 69, 0.75),
+        rgba(53, 34, 49, 0.9)
+    );
+    color: #ead5dc;
+    font-family: inherit;
+    font-size: 0.72rem;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.vault-unlock-button:hover {
+    background: #75465d;
+    border-color: #d0a2ad;
+    color: #fff0f2;
+    box-shadow: 0 0 25px rgba(155, 88, 116, 0.2);
+    transform: translateY(-3px);
+}
+
+.unlock-arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.vault-unlock-button:hover .unlock-arrow {
+    transform: translateX(5px);
+}
+
+.vault-hint {
+    color: #776a75;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+    margin-top: 17px;
+}
+
+/* ---------- UNLOCKED STATE ---------- */
+
+.vault-gate.unlocked .vault-outer-ring {
+    transform: rotate(45deg);
+    border-color: rgba(205, 157, 171, 0.9);
+    box-shadow: 0 0 30px rgba(177, 105, 137, 0.2);
+}
+
+.vault-gate.unlocked .vault-middle-ring {
+    transform: rotate(-60deg);
+    border-color: rgba(205, 157, 171, 0.75);
+}
+
+.vault-gate.unlocked .vault-inner-ring {
+    transform: rotate(90deg);
+    border-color: rgba(205, 157, 171, 0.65);
+}
+
+.vault-gate.unlocked .vault-lock-icon {
+    color: #f0cbd5;
+    transform: scale(1.12);
+}
+
+.vault-gate.unlocked .vault-lock-center {
+    box-shadow: 0 0 45px rgba(183, 113, 144, 0.4);
+}
+
+.vault-gate.unlocked .status-indicator {
+    background: #c49b9d;
+    animation: none;
+    box-shadow: 0 0 14px rgba(196, 155, 157, 0.8);
+}
+
+/* ---------- ARCHIVE CONTENTS ---------- */
+
+.vault-contents {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 900px;
+    padding: 15px 10px;
+    animation: archiveReveal 0.8s ease both;
+}
+
+.vault-contents[hidden] {
+    display: none !important;
+}
+
+@keyframes archiveReveal {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vault-access-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #c49aa9;
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.access-indicator {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #b68c9b;
+    box-shadow: 0 0 12px rgba(182, 140, 155, 0.7);
+}
+
+.vault-contents-title {
+    color: #eadce0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.vault-contents-description {
+    color: #a99ba4;
+    text-align: center;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    margin: 0 auto 38px;
+}
+
+/* ---------- PROJECT CHAMBERS ---------- */
+
+.vault-chambers {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+.vault-chamber {
+    position: relative;
+    min-height: 205px;
+    padding: 25px 22px;
+    text-align: left;
+    border: 1px solid rgba(179, 130, 151, 0.23);
+    border-radius: 4px;
+    background: linear-gradient(
+        145deg,
+        rgba(54, 37, 53, 0.88),
+        rgba(29, 24, 33, 0.95)
+    );
+    color: #e6d7dc;
+    cursor: pointer;
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.vault-chamber::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: -55px;
+    bottom: -65px;
+    border: 1px solid rgba(190, 139, 158, 0.12);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.vault-chamber:hover {
+    transform: translateY(-7px);
+    border-color: rgba(197, 148, 165, 0.7);
+    background: linear-gradient(
+        145deg,
+        rgba(76, 48, 68, 0.95),
+        rgba(37, 28, 39, 0.98)
+    );
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.24);
+}
+
+.vault-chamber:hover::before {
+    transform: scale(1.8);
+}
+
+.vault-chamber.active {
+    border-color: #bd8d9e;
+    background: linear-gradient(
+        145deg,
+        rgba(91, 54, 75, 0.95),
+        rgba(43, 30, 43, 0.98)
+    );
+    box-shadow: 0 0 25px rgba(155, 88, 116, 0.13);
+}
+
+.chamber-number {
+    display: block;
+    color: #987487;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.chamber-symbol {
+    display: block;
+    color: #d0a6b3;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    transition: transform 0.35s ease;
+}
+
+.vault-chamber:hover .chamber-symbol {
+    transform: scale(1.12);
+}
+
+.chamber-title {
+    display: block;
+    color: #eadce0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.chamber-category {
+    display: block;
+    color: #a58d9b;
+    font-size: 0.67rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.chamber-arrow {
+    position: absolute;
+    right: 21px;
+    bottom: 22px;
+    color: #c79baa;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.vault-chamber:hover .chamber-arrow {
+    transform: translateX(5px);
+}
+
+/* ---------- PROJECT DISPLAY ---------- */
+
+.project-display {
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    margin: 35px auto 0;
+    scroll-margin-top: 90px;
+}
+
+.project-display-placeholder {
+    padding: 27px 20px;
+    text-align: center;
+    border: 1px solid rgba(179, 130, 151, 0.12);
+    background: rgba(29, 24, 33, 0.55);
+}
+
+.project-display-placeholder p:first-child {
+    color: #c39aa8;
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.project-display-placeholder p:last-child {
+    color: #92838e;
+    font-size: 0.84rem;
+    line-height: 1.7;
+}
+
+.project-panel {
+    padding: 38px;
+    border: 1px solid rgba(179, 130, 151, 0.25);
+    border-radius: 5px;
+    background: linear-gradient(
+        145deg,
+        rgba(37, 29, 40, 0.97),
+        rgba(25, 22, 30, 0.98)
+    );
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2);
+    animation: archiveReveal 0.55s ease both;
+}
+
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 760px) {
+    .vault-section {
+        padding: 85px 5% 90px;
+    }
+
+    .vault-intro {
+        margin-bottom: 45px;
+    }
+
+    .vault-scene {
+        min-height: 510px;
+        padding: 35px 18px;
+    }
+
+    .vault-chambers {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin: 0 auto;
+        gap: 13px;
+    }
+
+    .vault-chamber {
+        min-height: 145px;
+        padding: 20px;
+    }
+
+    .chamber-number {
+        margin-bottom: 12px;
+    }
+
+    .chamber-symbol {
+        font-size: 1.6rem;
+        margin-bottom: 9px;
+    }
+
+    .chamber-title {
+        font-size: 1.1rem;
+    }
+
+    .project-panel {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vault-section {
+        padding: 70px 18px 75px;
+    }
+
+    .vault-intro h2 {
+        font-size: 2.7rem;
+    }
+
+    .vault-intro p {
+        font-size: 0.87rem;
+    }
+
+    .vault-scene {
+        min-height: 465px;
+        padding: 30px 13px;
+    }
+
+    .vault-lock {
+        width: 205px;
+        height: 205px;
+    }
+
+    .vault-lock-center {
+        width: 88px;
+        height: 88px;
+    }
+
+    .vault-lock-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .vault-status {
+        font-size: 0.64rem;
+        letter-spacing: 2px;
+    }
+
+    .vault-count {
+        font-size: 0.59rem;
+    }
+
+    .vault-unlock-button {
+        min-width: 190px;
+        padding: 14px 18px;
+        font-size: 0.67rem;
+    }
+
+    .vault-contents-title {
+        font-size: 2rem;
+    }
+
+    .vault-contents-description {
+        font-size: 0.82rem;
+        margin-bottom: 27px;
+    }
+
+    .vault-chamber {
+        min-height: 138px;
+    }
+
+    .project-panel {
+        padding: 22px 16px;
+    }
+}
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .vault-section *,
+    .vault-section *::before,
+    .vault-section *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Make the vault lock itself interactive */
+
+.vault-lock {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.vault-lock:focus-visible {
+    outline: 2px solid #d0a2ad;
+    outline-offset: 9px;
+    border-radius: 50%;
+}
+
+.vault-lock:hover {
+    transform: scale(1.045);
+}
+
+.vault-lock:hover .vault-outer-ring {
+    border-color: #d0a2ad;
+    box-shadow: 0 0 28px rgba(190, 120, 150, 0.3);
+}
+
+.vault-lock:hover .vault-lock-center {
+    box-shadow: 0 0 40px rgba(183, 113, 144, 0.35);
+}
+
+/* The separate button is no longer used */
+.vault-unlock-button {
+    display: none;
+}
+
+
+/* ---------- LOCK INTERACTION HINT ---------- */
+
+.vault-click-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 22px;
+    animation: hintPulse 2.5s ease-in-out infinite;
+}
+
+.hint-text {
+    color: #c9a0ae;
+    font-size: 0.68rem;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+
+.hint-line {
+    width: 28px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a8798d
+    );
+}
+
+.hint-line:last-child {
+    transform: rotate(180deg);
+}
+
+@keyframes hintPulse {
+    0%, 100% {
+        opacity: 0.65;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.vault-lock {
+    cursor: pointer;
+}
+
+.vault-lock:hover {
+    filter: brightness(1.15);
+}
+
+@media (max-width: 480px) {
+    .hint-text {
+        font-size: 0.59rem;
+        letter-spacing: 1.8px;
+    }
+
+    .hint-line {
+        width: 19px;
+    }
+}
+
+
+/* =========================================
+   VAULT — MOBILE OVERFLOW FIX
+========================================= */
+
+.vault-section,
+.vault-scene,
+.vault-contents,
+.project-display {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.vault-section {
+    width: 100%;
+    overflow-x: clip;
+}
+
+.vault-scene {
+    width: 100%;
+}
+
+.vault-contents {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vault-contents-title,
+.vault-contents-description,
+.vault-access-heading {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.vault-chambers {
+    width: 100%;
+    min-width: 0;
+}
+
+.vault-chamber {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+}
+
+.project-panel {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 760px) {
+
+    .vault-scene {
+        padding: 30px 14px;
+        overflow: hidden;
+    }
+
+    .vault-contents {
+        padding: 12px 4px;
+    }
+
+    .vault-chambers {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .vault-contents-title {
+        font-size: clamp(1.8rem, 8vw, 2.3rem);
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .vault-contents-description {
+        font-size: 0.82rem;
+        text-align: center;
+    }
+
+    .vault-access-heading {
+        font-size: 0.62rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .vault-chamber {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 380px) {
+    .vault-section {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .vault-scene {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .vault-contents {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+
+/* ---------- CENTER THE UNLOCKED VAULT ---------- */
+
+.vault-scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vault-contents {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.vault-access-heading,
+.vault-contents-title,
+.vault-contents-description {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.vault-chambers {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 150px));
+    justify-content: center;
+    justify-items: stretch;
+    gap: 100px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.vault-chamber {
+    width: 150px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile layout */
+@media (max-width: 760px) {
+    .vault-chambers {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        max-width: 440px;
+    }
+
+    .vault-chamber {
+        width: 100%;
+    }
+}
+
+
+/* ---------- VAULT DESKTOP CENTER ALIGNMENT FIX ---------- */
+
+
+
+.vault-contents {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    flex: 0 1 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.vault-access-heading {
+    width: 100%;
+    justify-content: center;
+}
+
+.vault-contents-title,
+.vault-contents-description {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vault-chambers {
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+}
+
+.vault-chamber {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* FIX: Fully remove hidden vault elements from layout */
+
+.vault-gate[hidden] {
+    display: none !important;
+}
+
+
+
+/* Keep unlocked archive perfectly centred */
+
+
+
+.vault-contents {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto !important;
+    flex: 0 1 900px;
+    text-align: center;
+}
+
+.vault-access-heading {
+    justify-content: center;
+    width: 100%;
+}
+
+.vault-contents-title,
+.vault-contents-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vault-chambers {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 18px;
+}
+
+@media (max-width: 760px) {
+    .vault-chambers {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ---------- CLOSE ARCHIVE BUTTON ---------- */
+
+.vault-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 38px auto 5px;
+    padding: 13px 23px;
+    background: transparent;
+    border: 1px solid rgba(190, 139, 158, 0.4);
+    border-radius: 2px;
+    color: #c9a0ae;
+    font-family: inherit;
+    font-size: 0.68rem;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vault-close-button span {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.vault-close-button:hover {
+    background: rgba(112, 62, 83, 0.25);
+    border-color: #c99aaa;
+    color: #f0dce2;
+}
+
+.vault-close-button:hover span {
+    transform: translateX(-5px);
+}
+
+
+
+/* ---------- SINGLE OUTER VAULT GLOW ---------- */
+
+/* Remove glow animations from inner elements */
+.vault-lock,
+.vault-lock .vault-middle-ring,
+.vault-lock .vault-inner-ring,
+.vault-lock .vault-lock-center {
+    animation: none !important;
+    box-shadow: none;
+    filter: none;
+}
+
+/* One continuous glow around the outer ring */
+.vault-lock .vault-outer-ring {
+    animation: outerRingGlow 3s ease-in-out infinite;
+}
+
+@keyframes outerRingGlow {
+    0%, 100% {
+        box-shadow:
+            0 0 6px rgba(190, 139, 158, 0.2),
+            0 0 12px rgba(190, 139, 158, 0.12);
+    }
+
+    50% {
+        box-shadow:
+            0 0 18px rgba(205, 151, 174, 0.65),
+            0 0 35px rgba(190, 139, 158, 0.4),
+            0 0 55px rgba(155, 88, 116, 0.2);
+    }
+}
+
+
+
+/* =========================================
+   STRONGER POETRY BOOK GLOW
+========================================= */
+
+.book-cover {
+    animation: bookGlow 3.5s ease-in-out infinite;
+}
+
+@keyframes bookGlow {
+    0%, 100% {
+        box-shadow:
+            0 0 8px rgba(190, 139, 158, 0.18),
+            0 0 18px rgba(155, 88, 116, 0.12);
+    }
+
+    50% {
+        box-shadow:
+            0 0 22px rgba(205, 157, 171, 0.5),
+            0 0 42px rgba(155, 88, 116, 0.35),
+            0 0 65px rgba(155, 88, 116, 0.16);
+    }
+}
+
+.book-cover:hover {
+    box-shadow:
+        0 0 28px rgba(215, 169, 184, 0.65),
+        0 0 55px rgba(155, 88, 116, 0.4);
+}
+
+
+/* =========================================
+   FINAL FIX — PROJECTS TO POETRY SPACING
+========================================= */
+
+@media (max-width: 760px) {
+
+    /* Remove unnecessary height from Projects */
+    #projects.vault-section {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Remove excess space after the vault */
+    #projects .project-display {
+        margin-top: 0 !important;
+    }
+
+    /* Keep a small, comfortable gap before Poetry */
+    .poetry-book-section {
+        margin-top: 0 !important;
+        padding-top: 55px !important;
+    }
+}
+
+
+
+
+/* ---------- TIGHT PROJECTS → POETRY TRANSITION ---------- */
+
+@media (max-width: 760px) {
+
+    #projects.vault-section {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-bottom: 8px !important;
+        margin-bottom: 0 !important;
+    }
+
+    #projects .vault-scene {
+        min-height: 0 !important;
+        height: auto !important;
+        margin-bottom: 0 !important;
+    }
+
+    #projects .project-display {
+        margin-bottom: 0 !important;
+    }
+
+    .poetry-book-section {
+        margin-top: 0 !important;
+        padding-top: 28px !important;
+    }
+}
+
+
+
+
+/* ==========================================
+   EDUCATION — THE ANTIQUE SCROLL
+========================================== */
+
+.education-section {
+    position: relative;
+    padding: 110px 7% 125px;
+    min-height: auto;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.education-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 65px;
+}
+
+.education-eyebrow {
+    display: inline-block;
+    color: #C99BAA;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.education-intro h2 {
+    font-family: "Times New Roman", serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 400;
+    color: #F0E4E9;
+    margin: 0 0 18px;
+}
+
+.education-intro h2 span {
+    color: #C28B9F;
+    font-style: italic;
+}
+
+.education-intro p {
+    color: #B7AAB2;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* SCROLL STAGE */
+
+.scroll-stage {
+    position: relative;
+    width: calc(100% - 28px);
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    isolation: isolate;
+    filter: drop-shadow(0 20px 25px rgba(0,0,0,.35));
+}
+
+/* ANTIQUE PARCHMENT */
+
+.scroll-paper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    transform-origin: left center;
+
+    clip-path: inset(0 100% 0 0);
+
+    background:
+        radial-gradient(
+            ellipse at 15% 18%,
+            rgba(218,195,181,.10),
+            transparent 42%
+        ),
+        radial-gradient(
+            ellipse at 85% 82%,
+            rgba(35,22,29,.22),
+            transparent 45%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(45,29,37,.045) 0px,
+            rgba(45,29,37,.045) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        linear-gradient(
+            115deg,
+            #75646A 0%,
+            #88747A 35%,
+            #806C73 70%,
+            #69565E 100%
+        );
+
+    border-top: 1px solid rgba(194,153,139,.45);
+    border-bottom: 1px solid rgba(194,153,139,.45);
+
+    box-shadow:
+        inset 0 0 45px rgba(35,20,28,.2),
+        inset 0 0 10px rgba(225,190,171,.08);
+}
+
+/* PAPER BORDER */
+
+.scroll-content {
+    position: relative;
+    z-index: 1;
+    padding: 48px 7% 30px;
+    color: #30232B;
+    opacity: 0;
+    transition: opacity .5s ease 1.15s;
+}
+
+.scroll-content::before {
+    content: "";
+    position: absolute;
+    inset: 17px;
+    border: 1px solid rgba(44,29,36,.35);
+    pointer-events: none;
+}
+
+.scroll-content::after {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border: 1px solid rgba(44,29,36,.13);
+    pointer-events: none;
+}
+
+/* HEADING */
+
+.scroll-heading {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(44,29,36,.32);
+}
+
+.scroll-overline,
+.scroll-emblem {
+    color: #3F3037;
+    font-size: .66rem;
+    letter-spacing: 3px;
+}
+
+/* DEGREE */
+
+.scroll-main {
+    position: relative;
+    z-index: 2;
+    padding: 42px 0 35px;
+}
+
+.scroll-copy {
+    max-width: 720px;
+}
+
+.scroll-small-label {
+    display: block;
+    color: #4D3942;
+    font-size: .68rem;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.scroll-copy h3 {
+    font-family: "Times New Roman", serif;
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+    font-weight: 400;
+    line-height: 1.02;
+    color: #30232B;
+    margin: 0 0 15px;
+}
+
+.scroll-copy h4 {
+    color: #49363F;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 17px;
+}
+
+.scroll-specialisations {
+    color: #49383E;
+    font-size: .83rem;
+    line-height: 1.8;
+}
+
+.scroll-specialisations span {
+    color: #B18C78;
+    padding: 0 6px;
+}
+
+/* DIVIDER */
+
+.scroll-divider {
+    position: relative;
+    z-index: 2;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(44,29,36,.5),
+        transparent
+    );
+}
+
+/* INSTITUTION DETAILS */
+
+.scroll-bottom {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.4fr .8fr;
+    gap: 30px;
+    padding: 27px 0;
+}
+
+.scroll-detail > span,
+.scroll-interests > span {
+    display: block;
+    color: #4D3942;
+    font-size: .65rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
+}
+
+.scroll-detail p {
+    color: #30232B;
+    font-size: .92rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* INTERESTS */
+
+.scroll-interests {
+    position: relative;
+    z-index: 2;
+    padding: 5px 0 25px;
+}
+
+.scroll-interests p {
+    color: #49343D;
+    font-family: "Times New Roman", serif;
+    font-size: 1.12rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.scroll-interests i {
+    color: #B18C78;
+    font-style: normal;
+    padding: 0 7px;
+}
+
+/* FOOTER */
+
+.scroll-footer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(44,29,36,.32);
+    color: #4D3942;
+    font-size: .6rem;
+    letter-spacing: 2px;
+}
+
+/* LEFT AND RIGHT ROLLERS */
+
+.scroll-rod {
+    position: absolute;
+    z-index: 5;
+    top: -7px;
+    bottom: -7px;
+    width: 18px;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #654A3C 0%,
+        #A47B58 22%,
+        #D0AE7D 48%,
+        #A47B58 75%,
+        #634632 100%
+    );
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.45),
+        inset 2px 0 3px rgba(255,255,255,.3),
+        inset -2px 0 3px rgba(0,0,0,.3);
+}
+
+.scroll-rod-left {
+    left: -9px;
+}
+
+.scroll-rod-right {
+    left: -9px;
+}
+
+.rod-finial {
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    background: radial-gradient(
+        circle at 35% 30%,
+        #E4C89A,
+        #B18A5C 55%,
+        #62452F
+    );
+
+    border: 1px solid rgba(64,43,29,.6);
+    box-shadow: 0 2px 5px rgba(0,0,0,.35);
+}
+
+.rod-finial-top {
+    top: -7px;
+}
+
+.rod-finial-bottom {
+    bottom: -7px;
+}
+
+/* AUTOMATIC UNROLL */
+
+.education-section.is-unrolled .scroll-paper {
+    animation: parchmentReveal 1.8s cubic-bezier(.22,.75,.25,1) forwards;
+}
+
+.education-section.is-unrolled .scroll-content {
+    opacity: 1;
+}
+
+.education-section.is-unrolled .scroll-rod-right {
+    animation: rightRollerTravel 1.8s cubic-bezier(.22,.75,.25,1) forwards;
+}
+
+@keyframes parchmentReveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes rightRollerTravel {
+    from {
+        left: -9px;
+    }
+
+    to {
+        left: calc(100% - 9px);
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .scroll-paper {
+        clip-path: none !important;
+        animation: none !important;
+    }
+
+    .scroll-content {
+        opacity: 1 !important;
+        transition: none !important;
+    }
+
+    .scroll-rod-right {
+        left: calc(100% - 9px);
+        animation: none !important;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+    .education-section {
+        padding: 80px 5% 90px;
+    }
+
+    .education-intro {
+        margin-bottom: 45px;
+    }
+
+    .scroll-stage {
+        width: calc(100% - 20px);
+    }
+
+    .scroll-content {
+        padding: 38px 7% 25px;
+    }
+
+    .scroll-main {
+        padding: 32px 0 25px;
+    }
+
+    .scroll-copy h3 {
+        font-size: clamp(2.4rem, 9vw, 3.5rem);
+    }
+
+    .scroll-bottom {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .scroll-rod {
+        width: 14px;
+    }
+
+    .rod-finial {
+        width: 22px;
+        height: 22px;
+    }
+
+    .scroll-footer {
+        font-size: .5rem;
+        letter-spacing: 1.2px;
+    }
+
+    @keyframes rightRollerTravel {
+        from {
+            left: -7px;
+        }
+
+        to {
+            left: calc(100% - 7px);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .scroll-content {
+        padding: 34px 7% 22px;
+    }
+
+    .scroll-overline,
+    .scroll-emblem {
+        font-size: .53rem;
+        letter-spacing: 1.5px;
+    }
+
+    .scroll-copy h3 {
+        font-size: 2.35rem;
+    }
+
+    .scroll-interests p {
+        font-size: .98rem;
+    }
+
+    .scroll-footer {
+        font-size: .43rem;
+        letter-spacing: .7px;
+    }
+}
+
+
+/* ==========================================
+   EDUCATION — DARK AGED MANUSCRIPT
+========================================== */
+
+.scroll-paper {
+    background:
+        radial-gradient(
+            ellipse at 20% 15%,
+            rgba(205,175,157,.09),
+            transparent 45%
+        ),
+        radial-gradient(
+            ellipse at 80% 85%,
+            rgba(15,10,16,.25),
+            transparent 50%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(15,10,16,.035) 0px,
+            rgba(15,10,16,.035) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        linear-gradient(
+            115deg,
+            #393039,
+            #51434A 45%,
+            #443740 75%,
+            #342A34
+        );
+
+    border-top: 1px solid rgba(196,167,126,.4);
+    border-bottom: 1px solid rgba(196,167,126,.4);
+
+    box-shadow:
+        inset 0 0 50px rgba(0,0,0,.25);
+}
+
+.scroll-content {
+    color: #D8C9BC;
+}
+
+.scroll-content::before {
+    border-color: rgba(196,167,126,.35);
+}
+
+.scroll-content::after {
+    border-color: rgba(196,167,126,.15);
+}
+
+.scroll-heading,
+.scroll-footer {
+    border-color: rgba(196,167,126,.3);
+}
+
+.scroll-overline,
+.scroll-emblem,
+.scroll-small-label,
+.scroll-detail > span,
+.scroll-interests > span {
+    color: #C4A77E;
+}
+
+.scroll-copy h3 {
+    color: #E4D5C9;
+}
+
+.scroll-copy h4,
+.scroll-interests p {
+    color: #D2BFB4;
+}
+
+.scroll-specialisations,
+.scroll-detail p {
+    color: #C8B7AE;
+}
+
+.scroll-specialisations span,
+.scroll-interests i {
+    color: #C4A77E;
+}
+
+.scroll-divider {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(196,167,126,.45),
+        transparent
+    );
+}
+
+.scroll-footer {
+    color: #C4A77E;
+}
+
+
+
+/* ==========================================
+   VAULT SCENE — ARCHITECTURAL CHAMBER FRAME
+   Surrounds the existing lock without altering it
+========================================== */
+
+.vault-scene {
+    position: relative;
+    isolation: isolate;
+    border: 1px solid rgba(190, 139, 158, 0.22);
+    border-radius: 4px;
+    background:
+        radial-gradient(circle at 25px 25px, rgba(201,154,170,.75) 0 2px, rgba(53,42,51,.95) 2.5px 4px, transparent 4.5px),
+        radial-gradient(circle at calc(100% - 25px) 25px, rgba(201,154,170,.75) 0 2px, rgba(53,42,51,.95) 2.5px 4px, transparent 4.5px),
+        radial-gradient(circle at 25px calc(100% - 25px), rgba(201,154,170,.75) 0 2px, rgba(53,42,51,.95) 2.5px 4px, transparent 4.5px),
+        radial-gradient(circle at calc(100% - 25px) calc(100% - 25px), rgba(201,154,170,.75) 0 2px, rgba(53,42,51,.95) 2.5px 4px, transparent 4.5px),
+        linear-gradient(145deg, #211B25, #151319 58%, #201923);
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.30),
+        inset 0 0 55px rgba(0,0,0,.28),
+        inset 0 1px rgba(255,255,255,.025);
+}
+
+.vault-scene::before {
+    content: "";
+    position: absolute;
+    inset: 17px;
+    z-index: 0;
+    pointer-events: none;
+    border: 1px solid rgba(190,139,158,.13);
+    border-radius: 2px;
+    background:
+        linear-gradient(#A77C8D,#A77C8D) left top / 34px 1px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) left top / 1px 34px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) right top / 34px 1px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) right top / 1px 34px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) left bottom / 34px 1px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) left bottom / 1px 34px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) right bottom / 34px 1px no-repeat,
+        linear-gradient(#A77C8D,#A77C8D) right bottom / 1px 34px no-repeat;
+}
+
+.vault-scene::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    width: 58%;
+    height: 1px;
+    left: 21%;
+    top: 50%;
+    background: linear-gradient(90deg, transparent, rgba(190,139,158,.12), transparent);
+}
+
+.vault-gate,
+.vault-contents {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 760px) {
+    .vault-scene::before {
+        inset: 10px;
+        background-size:
+            24px 1px, 1px 24px,
+            24px 1px, 1px 24px,
+            24px 1px, 1px 24px,
+            24px 1px, 1px 24px;
+    }
+}
+
+/* =========================================
+   CONTACT — VINTAGE ROTARY TELEPHONE
+========================================= */
+
+.contact-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 110px 7% 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-eyebrow,
+.reveal-eyebrow {
+    color: #bd8b9e;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 17px;
+}
+
+.contact-heading h2 {
+    font-family: "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 400;
+    color: #eadce1;
+    margin-bottom: 13px;
+}
+
+.contact-subtitle {
+    color: #b7aab1;
+    font-size: 14px;
+    letter-spacing: .4px;
+    line-height: 1.8;
+}
+
+.telephone-container {
+    position: relative;
+    width: min(100%, 440px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px 30px;
+    border: 1px solid rgba(190,139,158,.18);
+    border-radius: 12px;
+    background: linear-gradient(145deg, #211a22, #151218 75%);
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.4),
+        inset 0 0 35px rgba(155,88,116,.06);
+    z-index: 1;
+}
+
+.telephone-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.phone-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #b78a9b;
+}
+
+.phone-light {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #6c4b5a;
+    transition: .4s ease;
+}
+
+.phone-light.connected {
+    background: #d4a6b5;
+    box-shadow: 0 0 10px #d4a6b5, 0 0 20px rgba(212,166,181,.5);
+}
+
+/* RECEIVER */
+
+.phone-receiver {
+    position: relative;
+    z-index: 3;
+    width: 245px;
+    height: 58px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform .45s ease;
+}
+
+.receiver-middle {
+    width: 125px;
+    height: 25px;
+    background: linear-gradient(180deg, #b77b8f, #63394c 50%, #3b2633);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.4);
+}
+
+.receiver-end {
+    position: absolute;
+    width: 56px;
+    height: 42px;
+    background: linear-gradient(145deg, #a76e82, #60394a 65%, #382631);
+    border-radius: 18px 18px 12px 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.35);
+}
+
+.receiver-left {
+    left: 5px;
+    transform: rotate(-27deg);
+}
+
+.receiver-right {
+    right: 5px;
+    transform: rotate(27deg);
+}
+
+.phone-receiver:hover {
+    transform: translateY(-3px);
+}
+
+.phone-receiver.lifted {
+    transform: translateY(-34px) rotate(-8deg);
+}
+
+/* TELEPHONE BODY */
+
+.telephone-body {
+    position: relative;
+    width: 280px;
+    min-height: 345px;
+    padding: 22px 20px 18px;
+    border-radius: 32px 32px 45px 45px;
+    background:
+        linear-gradient(135deg, #965b70 0%, #673d50 30%, #492b3b 68%, #301e2a 100%);
+    border: 1px solid rgba(219,171,185,.35);
+    box-shadow:
+        0 18px 30px rgba(0,0,0,.4),
+        inset 2px 2px 5px rgba(255,255,255,.16),
+        inset -5px -8px 15px rgba(0,0,0,.3);
+}
+
+.phone-brand {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #e4c1cb;
+    margin-bottom: 15px;
+}
+
+/* ROTARY DIAL */
+
+.rotary-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dial-ring {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    padding: 9px;
+    background: linear-gradient(145deg, #d5b8a6, #72564f 50%, #30262a);
+    box-shadow:
+        0 5px 12px rgba(0,0,0,.4),
+        inset 0 2px 4px rgba(255,255,255,.25);
+}
+
+.dial-disc {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #4c3b40, #30252b 75%);
+    border: 2px solid rgba(224,194,180,.45);
+    box-shadow: inset 0 0 20px rgba(0,0,0,.6);
+    transition: transform .45s cubic-bezier(.2,.7,.3,1);
+}
+
+.dial-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 66px;
+    height: 66px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background: linear-gradient(145deg, #8b6570, #4a303c);
+    border: 1px solid rgba(218,181,190,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e8cbd2;
+    font-size: 9px;
+    letter-spacing: 2px;
+    box-shadow: inset 0 2px 7px rgba(0,0,0,.5);
+    pointer-events: none;
+}
+
+.dial-centre small {
+    font-size: 7px;
+    letter-spacing: 3px;
+    margin-top: 3px;
+}
+
+.dial-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    margin: -17px;
+    border-radius: 50%;
+    border: 1px solid rgba(221,190,181,.5);
+    background: linear-gradient(145deg, #b68c8c, #76545e);
+    color: #fff0ed;
+    font-family: "Times New Roman", serif;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,.4);
+    transform:
+        rotate(calc(var(--i) * 36deg))
+        translateY(-88px)
+        rotate(calc(var(--i) * -36deg));
+    transition: background .2s, box-shadow .2s;
+}
+
+.dial-number:hover {
+    background: #d0a3ad;
+    box-shadow: 0 0 12px rgba(220,169,185,.45);
+}
+
+.dial-number:active {
+    background: #e0b7c2;
+}
+
+.dial-feedback {
+    text-align: center;
+    color: #d5b3be;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-top: 16px;
+    min-height: 15px;
+}
+
+.phone-instruction {
+    color: #b991a0;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* CONTACT REVEAL */
+
+.contact-reveal {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(12px);
+    transition:
+        max-height .7s ease,
+        opacity .5s ease,
+        transform .5s ease,
+        margin .5s ease;
+    pointer-events: none;
+}
+
+.contact-reveal.visible {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 28px;
+    pointer-events: auto;
+}
+
+.contact-reveal h3 {
+    color: #eadce1;
+    font-family: "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px 14px;
+    text-decoration: none;
+    color: #e8dce1;
+    background: rgba(255,255,255,.025);
+    border: 1px solid rgba(190,139,158,.16);
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.contact-link:hover {
+    background: rgba(155,88,116,.13);
+    border-color: rgba(205,157,171,.5);
+    transform: translateX(4px);
+}
+
+.contact-link-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d6a8b8;
+    border: 1px solid rgba(205,157,171,.3);
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.contact-link strong,
+.contact-link small {
+    display: block;
+}
+
+.contact-link strong {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.contact-link small {
+    color: #a99ba3;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.contact-arrow {
+    margin-left: auto;
+    color: #c99aaa;
+    font-size: 17px;
+}
+
+.contact-footer {
+    color: #806c77;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        min-height: auto;
+        padding: 85px 6% 60px;
+    }
+
+    .contact-heading {
+        margin-bottom: 38px;
+    }
+
+    .contact-heading h2 {
+        font-size: 39px;
+    }
+
+    .contact-subtitle {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .telephone-container {
+        padding: 20px 12px 25px;
+    }
+
+    .telephone-body {
+        width: 265px;
+    }
+
+    .dial-ring {
+        width: 215px;
+        height: 215px;
+    }
+
+    .dial-number {
+        transform:
+            rotate(calc(var(--i) * 36deg))
+            translateY(-84px)
+            rotate(calc(var(--i) * -36deg));
+    }
+
+    .contact-reveal h3 {
+        font-size: 22px;
+    }
+
+    .contact-footer {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .phone-receiver,
+    .dial-disc,
+    .contact-reveal,
+    .contact-link {
+        transition: none;
+    }
+}
+
+.dial-number {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* =========================================
+   ROTARY DIAL — NUMBER ALIGNMENT FIX
+========================================= */
+
+.dial-disc {
+    position: relative;
+    overflow: visible;
+}
+
+.dial-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 34px;
+    height: 34px;
+    margin: -17px 0 0 -17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+
+    transform:
+        rotate(calc(var(--i) * 36deg))
+        translateY(-88px)
+        rotate(calc(var(--i) * -36deg));
+
+    pointer-events: none;
+}
+
+/* =========================================
+   RECEIVER — SOFT ROSE GOLD HALO
+========================================= */
+
+.phone-receiver {
+    animation: receiverGlow 3.5s ease-in-out infinite;
+}
+
+@keyframes receiverGlow {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px rgba(190,139,158,.18))
+                drop-shadow(0 0 10px rgba(155,88,116,.12));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 13px rgba(205,157,171,.55))
+                drop-shadow(0 0 27px rgba(190,139,158,.38))
+                drop-shadow(0 0 42px rgba(155,88,116,.2));
+    }
+}
+
+/* =========================================
+   CENTER NAVIGATION LINKS
+========================================= */
+
+header {
+    position: relative;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+@media (max-width: 850px) {
+    .nav-links {
+        position: static;
+        transform: none;
+        gap: 18px;
+    }
 }
