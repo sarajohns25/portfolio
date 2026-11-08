@@ -391,19 +391,28 @@ if (poetryBook) {
                 : "PICK UP THE RECEIVER TO CONNECT";
         }
 
-        // Smoothly scroll to the revealed contact details
         if (isConnected) {
+            // Wait for the contact details to become visible
             setTimeout(() => {
-                contactReveal.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
+                const elementPosition =
+                    contactReveal.getBoundingClientRect().top;
+
+                const scrollPosition =
+                    window.scrollY + elementPosition -
+                    (window.innerHeight * 0.25);
+
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: "smooth"
                 });
-            }, 300);
+            }, 800);
         }
     });
 
     console.log("Rotary telephone initialized successfully.");
 })();
+
+
 
 /* ==========================================
    EDUCATION — AUTOMATIC SCROLL ANIMATION
