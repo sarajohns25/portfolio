@@ -7055,3 +7055,23 @@ header {
         will-change: auto;
     }
 }
+
+
+/* =========================================
+   FOOTER — COPYRIGHT
+========================================= */
+
+.site-footer {
+    padding: 22px 15px;
+    text-align: center;
+    background: #111014;
+    border-top: 1px solid rgba(190, 139, 158, 0.15);
+}
+
+.copyright {
+    margin: 0;
+    color: #a99ba5;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
