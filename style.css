@@ -7075,3 +7075,13 @@ header {
     font-size: 12px;
     letter-spacing: 1px;
 }
+
+/* FIX: Keep the left poetry page number at the bottom */
+#leftPageNumber {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    z-index: 3;
+    pointer-events: none;
+}
